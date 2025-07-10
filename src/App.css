@@ -1,0 +1,50 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+  text-align: center;
+}
+
+div {
+  margin: 10px auto;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+span[data-testid="counter"] {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #2c3e50;
+}
+
+span[data-testid="odd-or-even"],
+span[data-testid="is-prime"] {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 18px;
+  background-color: #ecf0f1;
+  border-radius: 6px;
+}
